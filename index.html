@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weight Converter App</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<style>
+  h1 {
+    margin-top: 70px;
+  }
+  #output {
+    color: #fff;
+    font-size: 16px;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="display-4 text-center mb-2">Weight Converter App</h1>
+        <form>
+         <div class="form-group">
+            <input id="poundsInput" type="number" class="form-control form-control-lg" placeholder="Enter Weight in pounds">
+         </div>
+        </form>
+        <div id="output">
+          <div class="card bg-success mb-2 text-center">
+            <div class="card-block">
+              <h4>Grams:</h4>
+              <div id="gramsOutput"></div>
+            </div>
+          </div>
+          <div class="card bg-primary mb-2 text-center">
+            <div class="card-block">
+              <h4>Kilograms:</h4>
+              <div id="kgOutput"></div>
+            </div>
+          </div>
+          <div class="card bg-danger mb-2 text-center">
+            <div class="card-block">
+              <h4>Ounce:</h4>
+              <div id="ounceOutput"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.onreadystatechange = function() {
+      if(document.readyState === "complete") {
+        app.appCtrl();
+      }
+    }
+  </script>
+</body>
+</html>
